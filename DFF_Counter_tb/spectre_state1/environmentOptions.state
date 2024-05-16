@@ -40,8 +40,6 @@
 (envOpts setTopLevelAsSubckt) nil
 (envOpts sst2usecolon) nil
 (envOpts stimulusFile) nil
-(envOpts stopViewList) ("spectre")
-(envOpts switchViewList) ("spectre" "cmos_sch" "cmos.sch" "schematic" "veriloga")
 (envOpts termDirectionMismatch) "ignore"
 (envOpts termMismatch) "ignore"
 (envOpts userCmdLineOption) ""

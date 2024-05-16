@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      haoxian
+HostName                       eeapps04.seas.ucla.edu
+ProcessIdentifier              32321
+ProcessCreationTime_UTC        1712696916
+ProcessCreationTime_Readable   Tue Apr  9 14:08:36 2024 PDT
+AppIdentifier                  OA File System Design Manager
+OSType                         unix
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         /w/home.05/ee/ugrad/haoxian/ee209bs/ECE209Project/Charge_Pump/schematic/sch.oa.cdslck
+TimeEditLocked                 Tue Apr  9 14:09:49 2024 PDT
