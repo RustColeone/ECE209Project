@@ -1,0 +1,3 @@
+projectDir = '"~/simulation"
+designInfo = '("ReceiverPLL" "tb_MUX" "schematic" "spectre")
+descriptionText = "None"
