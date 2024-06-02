@@ -8,7 +8,7 @@
 (opts approx) ""
 (opts audit) ""
 (opts auto_minductor) ""
-(opts checklimitdest) ""
+(opts checklimitdest) "psf"
 (opts checklimitfile) ""
 (opts checklimitskipfile) ""
 (opts checklimitskipsubs) ""
