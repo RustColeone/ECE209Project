@@ -23,7 +23,7 @@
 (turboOpts rcrNetFmax) nil
 (turboOpts spectreDecouplingCapacitorThreshold) ""
 (turboOpts spectreResistorShortingThreshold) ""
-(turboOpts uniMode) "Spectre"
+(turboOpts uniMode) "APS"
 (turboOpts virtualGroundNodes) nil
 (turboOpts virtualPowerNodeListBox) (nil choices nil value nil)
 (turboOpts virtualPowerNodeValue) nil

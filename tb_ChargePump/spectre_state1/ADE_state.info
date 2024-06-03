@@ -1,3 +1,3 @@
 projectDir = '"~/simulation"
-designInfo = '("215EProject" "tb_ChargePump" "schematic" "spectre")
+designInfo = '("ReceiverPLL" "tb_ChargePump" "schematic" "spectre")
 descriptionText = "None"

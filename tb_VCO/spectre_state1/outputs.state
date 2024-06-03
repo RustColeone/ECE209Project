@@ -278,8 +278,12 @@ tmp1 = make_sevOutputStruct()
 (unless tmp1
 tmp1 = (ncons nil)
 )
-tmp1->name = "harm=1 freq; pss (Hz)"
+tmp1->definedIn = ""
+tmp1->name = "KVCO"
 tmp1->expression = (let
+(tmp1 tmp2)
+tmp1 = 'deriv
+tmp2 = (let
 (tmp1 tmp2 tmp3)
 tmp1 = 'harmonic
 tmp2 = (let
@@ -303,6 +307,149 @@ list(tmp1 tmp2)
 )
 list(tmp1 tmp2 tmp3)
 )
+list(tmp1 tmp2)
+)
+tmp1->signal = nil
+tmp1->scriptFile = ""
+tmp1->type2 = nil
+tmp1->evalType = nil
+tmp1->displayIt = 't
+tmp1->internalName = nil
+tmp1->masterName = nil
+tmp1->masterScriptFile = nil
+tmp1->saveScriptFile = nil
+tmp1->saveMasterScriptFile = nil
+tmp1->isReferenced = nil
+tmp1->lastEvalTime = nil
+tmp1->origin = nil
+tmp1->sweepSet = nil
+tmp1->depList = nil
+tmp1->type = nil
+tmp1->areaTable = nil
+tmp1->selectionDetail = nil
+tmp1->value = nil
+tmp1->plot = 't
+tmp1->save = nil
+tmp1->march = nil
+tmp1->index = 6
+tmp1->timeStamp = nil
+tmp1->graphType = nil
+tmp1->yaxisLabel = nil
+tmp1->label = nil
+tmp1->yaxisUnit = nil
+tmp1->waveSpec = nil
+list(tmp1)
+)
+_outputList = nconc( _outputList savedComponent) 
+savedComponent = nil 
+savedComponent = (let
+(tmp1)
+(unless tmp1
+tmp1 = make_sevOutputStruct()
+)
+(unless tmp1
+tmp1 = (ncons nil)
+)
+tmp1->inLastSet = nil
+tmp1->name = nil
+tmp1->expression = nil
+tmp1->signal = "/net011"
+tmp1->scriptFile = nil
+tmp1->type2 = nil
+tmp1->evalType = nil
+tmp1->displayIt = nil
+tmp1->internalName = nil
+tmp1->masterName = nil
+tmp1->masterScriptFile = nil
+tmp1->saveScriptFile = nil
+tmp1->saveMasterScriptFile = nil
+tmp1->isReferenced = nil
+tmp1->lastEvalTime = nil
+tmp1->origin = nil
+tmp1->sweepSet = nil
+tmp1->depList = nil
+tmp1->type = 'net
+tmp1->areaTable = nil
+tmp1->selectionDetail = nil
+tmp1->value = nil
+tmp1->plot = nil
+tmp1->save = 't
+tmp1->march = nil
+tmp1->index = 7
+tmp1->timeStamp = nil
+tmp1->graphType = nil
+tmp1->yaxisLabel = nil
+tmp1->label = nil
+tmp1->yaxisUnit = nil
+tmp1->waveSpec = nil
+list(tmp1)
+)
+_outputList = nconc( _outputList savedComponent) 
+savedComponent = nil 
+savedComponent = (let
+(tmp1)
+(unless tmp1
+tmp1 = make_sevOutputStruct()
+)
+(unless tmp1
+tmp1 = (ncons nil)
+)
+tmp1->inLastSet = nil
+tmp1->name = nil
+tmp1->expression = nil
+tmp1->signal = "/net010"
+tmp1->scriptFile = nil
+tmp1->type2 = nil
+tmp1->evalType = nil
+tmp1->displayIt = nil
+tmp1->internalName = nil
+tmp1->masterName = nil
+tmp1->masterScriptFile = nil
+tmp1->saveScriptFile = nil
+tmp1->saveMasterScriptFile = nil
+tmp1->isReferenced = nil
+tmp1->lastEvalTime = nil
+tmp1->origin = nil
+tmp1->sweepSet = nil
+tmp1->depList = nil
+tmp1->type = 'net
+tmp1->areaTable = nil
+tmp1->selectionDetail = nil
+tmp1->value = nil
+tmp1->plot = nil
+tmp1->save = 't
+tmp1->march = nil
+tmp1->index = 8
+tmp1->timeStamp = nil
+tmp1->graphType = nil
+tmp1->yaxisLabel = nil
+tmp1->label = nil
+tmp1->yaxisUnit = nil
+tmp1->waveSpec = nil
+list(tmp1)
+)
+_outputList = nconc( _outputList savedComponent) 
+savedComponent = nil 
+savedComponent = (let
+(tmp1)
+(unless tmp1
+tmp1 = make_sevOutputStruct()
+)
+(unless tmp1
+tmp1 = (ncons nil)
+)
+tmp1->name = "Phase Noise; dBc/Hz, Relative Harmonic = 1"
+tmp1->expression = (let
+(tmp1 tmp2)
+tmp1 = 'pn
+tmp2 = (let
+(tmp1 tmp2)
+tmp1 = 'quote
+tmp2 = 'pnoise
+list(tmp1 tmp2)
+)
+list(tmp1 tmp2)
+)
 tmp1->signal = nil
 tmp1->scriptFile = nil
 tmp1->type2 = nil
@@ -325,7 +472,281 @@ tmp1->value = nil
 tmp1->plot = 't
 tmp1->save = nil
 tmp1->march = nil
-tmp1->index = 6
+tmp1->index = 9
+tmp1->timeStamp = nil
+tmp1->graphType = nil
+tmp1->yaxisLabel = "Phase Noise"
+tmp1->label = (let
+(tmp1 tmp2 tmp3 tmp4 tmp5 tmp6 tmp7 tmp8 tmp9 tmp10 tmp11 tmp12 tmp13 tmp14 tmp15 tmp16 tmp17 tmp18 tmp19)
+tmp1 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = (let
+(tmp1 tmp2)
+tmp1 = 9.3219148494654974e+02
+tmp2 = -4.2125518006939473e+01
+list(tmp1 tmp2)
+)
+tmp2 = "(VCONT:CorFreq:PN-3dB)"
+tmp3 = "list(1.80e+00 9.322e+02 -4.21e+01)"
+list(tmp1 tmp2 tmp3)
+)
+tmp2 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = (let
+(tmp1 tmp2)
+tmp1 = 7.8365597988542572e+02
+tmp2 = -4.0496491810973716e+01
+list(tmp1 tmp2)
+)
+tmp2 = "(VCONT:CorFreq:PN-3dB)"
+tmp3 = "list(1.70e+00 7.837e+02 -4.05e+01)"
+list(tmp1 tmp2 tmp3)
+)
+tmp3 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = (let
+(tmp1 tmp2)
+tmp1 = 7.8354672763087342e+02
+tmp2 = -4.1500062740526751e+01
+list(tmp1 tmp2)
+)
+tmp2 = "(VCONT:CorFreq:PN-3dB)"
+tmp3 = "list(1.60e+00 7.835e+02 -4.15e+01)"
+list(tmp1 tmp2 tmp3)
+)
+tmp4 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = (let
+(tmp1 tmp2)
+tmp1 = 6.3487538453031971e+02
+tmp2 = -4.2069766654968738e+01
+list(tmp1 tmp2)
+)
+tmp2 = "(VCONT:CorFreq:PN-3dB)"
+tmp3 = "list(1.50e+00 6.349e+02 -4.21e+01)"
+list(tmp1 tmp2 tmp3)
+)
+tmp5 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = (let
+(tmp1 tmp2)
+tmp1 = 1.8949610455195352e+02
+tmp2 = -3.8125294342031253e+01
+list(tmp1 tmp2)
+)
+tmp2 = "(VCONT:CorFreq:PN-3dB)"
+tmp3 = "list(1.40e+00 1.895e+02 -3.81e+01)"
+list(tmp1 tmp2 tmp3)
+)
+tmp6 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = (let
+(tmp1 tmp2)
+tmp1 = 2.1880912429895614e+02
+tmp2 = -4.0480331050528221e+01
+list(tmp1 tmp2)
+)
+tmp2 = "(VCONT:CorFreq:PN-3dB)"
+tmp3 = "list(1.30e+00 2.188e+02 -4.05e+01)"
+list(tmp1 tmp2 tmp3)
+)
+tmp7 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = (let
+(tmp1 tmp2)
+tmp1 = 1.5915937775733238e+02
+tmp2 = -3.8626166811428838e+01
+list(tmp1 tmp2)
+)
+tmp2 = "(VCONT:CorFreq:PN-3dB)"
+tmp3 = "list(1.20e+00 1.592e+02 -3.86e+01)"
+list(tmp1 tmp2 tmp3)
+)
+tmp8 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = (let
+(tmp1 tmp2)
+tmp1 = 4.8238559545256510e+02
+tmp2 = -3.9459789786953458e+01
+list(tmp1 tmp2)
+)
+tmp2 = "(VCONT:CorFreq:PN-3dB)"
+tmp3 = "list(1.10e+00 4.824e+02 -3.95e+01)"
+list(tmp1 tmp2 tmp3)
+)
+tmp9 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = (let
+(tmp1 tmp2)
+tmp1 = 1.3605448381283411e+03
+tmp2 = -4.2436354498827541e+01
+list(tmp1 tmp2)
+)
+tmp2 = "(VCONT:CorFreq:PN-3dB)"
+tmp3 = "list(1.00e+00 1.361e+03 -4.24e+01)"
+list(tmp1 tmp2 tmp3)
+)
+tmp10 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = (let
+(tmp1 tmp2)
+tmp1 = 1.7950443813770676e+03
+tmp2 = -4.3884027343701533e+01
+list(tmp1 tmp2)
+)
+tmp2 = "(VCONT:CorFreq:PN-3dB)"
+tmp3 = "list(9.00e-01 1.795e+03 -4.39e+01)"
+list(tmp1 tmp2 tmp3)
+)
+tmp11 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = (let
+(tmp1 tmp2)
+tmp1 = 1.6455018330418904e+03
+tmp2 = -4.3652544123742032e+01
+list(tmp1 tmp2)
+)
+tmp2 = "(VCONT:CorFreq:PN-3dB)"
+tmp3 = "list(8.00e-01 1.646e+03 -4.37e+01)"
+list(tmp1 tmp2 tmp3)
+)
+tmp12 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = (let
+(tmp1 tmp2)
+tmp1 = 1.3520415407380779e+03
+tmp2 = -4.3149530277237943e+01
+list(tmp1 tmp2)
+)
+tmp2 = "(VCONT:CorFreq:PN-3dB)"
+tmp3 = "list(7.00e-01 1.352e+03 -4.31e+01)"
+list(tmp1 tmp2 tmp3)
+)
+tmp13 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = (let
+(tmp1 tmp2)
+tmp1 = 1.0598727217961541e+03
+tmp2 = -4.1899929132859384e+01
+list(tmp1 tmp2)
+)
+tmp2 = "(VCONT:CorFreq:PN-3dB)"
+tmp3 = "list(6.00e-01 1.060e+03 -4.19e+01)"
+list(tmp1 tmp2 tmp3)
+)
+tmp14 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = (let
+(tmp1 tmp2)
+tmp1 = 9.1389117617961915e+02
+tmp2 = -4.1191565915674829e+01
+list(tmp1 tmp2)
+)
+tmp2 = "(VCONT:CorFreq:PN-3dB)"
+tmp3 = "list(5.00e-01 9.139e+02 -4.12e+01)"
+list(tmp1 tmp2 tmp3)
+)
+tmp15 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = (let
+(tmp1 tmp2)
+tmp1 = 9.1367148987661619e+02
+tmp2 = -4.1728497246301131e+01
+list(tmp1 tmp2)
+)
+tmp2 = "(VCONT:CorFreq:PN-3dB)"
+tmp3 = "list(4.00e-01 9.137e+02 -4.17e+01)"
+list(tmp1 tmp2 tmp3)
+)
+tmp16 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = (let
+(tmp1 tmp2)
+tmp1 = 9.1352804442283764e+02
+tmp2 = -4.1995116678384775e+01
+list(tmp1 tmp2)
+)
+tmp2 = "(VCONT:CorFreq:PN-3dB)"
+tmp3 = "list(3.00e-01 9.135e+02 -4.20e+01)"
+list(tmp1 tmp2 tmp3)
+)
+tmp17 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = (let
+(tmp1 tmp2)
+tmp1 = 9.1340633771587386e+02
+tmp2 = -4.2129206587240745e+01
+list(tmp1 tmp2)
+)
+tmp2 = "(VCONT:CorFreq:PN-3dB)"
+tmp3 = "list(2.00e-01 9.134e+02 -4.21e+01)"
+list(tmp1 tmp2 tmp3)
+)
+tmp18 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = (let
+(tmp1 tmp2)
+tmp1 = 9.1332181249333689e+02
+tmp2 = -4.2200824559418365e+01
+list(tmp1 tmp2)
+)
+tmp2 = "(VCONT:CorFreq:PN-3dB)"
+tmp3 = "list(1.00e-01 9.133e+02 -4.22e+01)"
+list(tmp1 tmp2 tmp3)
+)
+tmp19 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = (let
+(tmp1 tmp2)
+tmp1 = 9.1323664242696645e+02
+tmp2 = -4.2242228055139748e+01
+list(tmp1 tmp2)
+)
+tmp2 = "(VCONT:CorFreq:PN-3dB)"
+tmp3 = "list(0.00e+00 9.132e+02 -4.22e+01)"
+list(tmp1 tmp2 tmp3)
+)
+list(tmp1 tmp2 tmp3 tmp4 tmp5 tmp6 tmp7 tmp8 tmp9 tmp10 tmp11 tmp12 tmp13 tmp14 tmp15 tmp16 tmp17 tmp18 tmp19)
+)
+tmp1->yaxisUnit = "dBc/Hz"
+tmp1->waveSpec = nil
+list(tmp1)
+)
+_outputList = nconc( _outputList savedComponent) 
+savedComponent = nil 
+savedComponent = (let
+(tmp1)
+(unless tmp1
+tmp1 = make_sevOutputStruct()
+)
+(unless tmp1
+tmp1 = (ncons nil)
+)
+tmp1->name = "(VCONT:CorFreq:PN-3dB)"
+tmp1->expression = "list(1.80e+00 9.322e+02 -4.21e+01)"
+tmp1->signal = nil
+tmp1->scriptFile = nil
+tmp1->type2 = nil
+tmp1->evalType = nil
+tmp1->displayIt = nil
+tmp1->internalName = nil
+tmp1->masterName = nil
+tmp1->masterScriptFile = nil
+tmp1->saveScriptFile = nil
+tmp1->saveMasterScriptFile = nil
+tmp1->isReferenced = nil
+tmp1->lastEvalTime = nil
+tmp1->origin = nil
+tmp1->sweepSet = nil
+tmp1->depList = nil
+tmp1->type = nil
+tmp1->areaTable = nil
+tmp1->selectionDetail = nil
+tmp1->value = nil
+tmp1->plot = nil
+tmp1->save = nil
+tmp1->march = nil
+tmp1->index = 10
 tmp1->timeStamp = nil
 tmp1->graphType = nil
 tmp1->yaxisLabel = nil
