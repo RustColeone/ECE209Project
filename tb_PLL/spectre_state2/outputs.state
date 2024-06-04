@@ -158,7 +158,7 @@ tmp1->depList = nil
 tmp1->type = nil
 tmp1->areaTable = nil
 tmp1->selectionDetail = nil
-tmp1->value = 2.5971455088857031e+09
+tmp1->value = nil
 tmp1->plot = 't
 tmp1->save = 't
 tmp1->march = nil
@@ -212,7 +212,7 @@ tmp1->depList = nil
 tmp1->type = nil
 tmp1->areaTable = nil
 tmp1->selectionDetail = nil
-tmp1->value = 2.5971046509978209e+09
+tmp1->value = nil
 tmp1->plot = 't
 tmp1->save = 't
 tmp1->march = nil
@@ -266,7 +266,7 @@ tmp1->depList = nil
 tmp1->type = nil
 tmp1->areaTable = nil
 tmp1->selectionDetail = nil
-tmp1->value = 1.2985489025652030e+09
+tmp1->value = nil
 tmp1->plot = 't
 tmp1->save = 't
 tmp1->march = nil
@@ -320,7 +320,7 @@ tmp1->depList = nil
 tmp1->type = nil
 tmp1->areaTable = nil
 tmp1->selectionDetail = nil
-tmp1->value = 6.4927003781243014e+08
+tmp1->value = nil
 tmp1->plot = 't
 tmp1->save = 't
 tmp1->march = nil
@@ -598,8 +598,8 @@ tmp1->type = nil
 tmp1->areaTable = nil
 tmp1->selectionDetail = nil
 tmp1->value = nil
-tmp1->plot = 't
-tmp1->save = 't
+tmp1->plot = nil
+tmp1->save = nil
 tmp1->march = nil
 tmp1->index = 11
 tmp1->timeStamp = nil
@@ -686,7 +686,7 @@ tmp1->type = 'net
 tmp1->areaTable = nil
 tmp1->selectionDetail = nil
 tmp1->value = nil
-tmp1->plot = nil
+tmp1->plot = 't
 tmp1->save = 't
 tmp1->march = nil
 tmp1->index = 13
@@ -730,7 +730,7 @@ tmp1->type = 'net
 tmp1->areaTable = nil
 tmp1->selectionDetail = nil
 tmp1->value = nil
-tmp1->plot = nil
+tmp1->plot = 't
 tmp1->save = 't
 tmp1->march = nil
 tmp1->index = 14
@@ -774,7 +774,7 @@ tmp1->type = 'net
 tmp1->areaTable = nil
 tmp1->selectionDetail = nil
 tmp1->value = nil
-tmp1->plot = nil
+tmp1->plot = 't
 tmp1->save = 't
 tmp1->march = nil
 tmp1->index = 15
@@ -864,7 +864,7 @@ tmp1->areaTable = nil
 tmp1->selectionDetail = nil
 tmp1->value = nil
 tmp1->plot = nil
-tmp1->save = 't
+tmp1->save = nil
 tmp1->march = nil
 tmp1->index = 17
 tmp1->timeStamp = nil
@@ -972,8 +972,8 @@ tmp1->type = nil
 tmp1->areaTable = nil
 tmp1->selectionDetail = nil
 tmp1->value = nil
-tmp1->plot = 't
-tmp1->save = 't
+tmp1->plot = nil
+tmp1->save = nil
 tmp1->march = nil
 tmp1->index = 19
 tmp1->timeStamp = nil
@@ -1135,8 +1135,8 @@ list(tmp1 tmp2)
 list(tmp1)
 )
 tmp1->value = nil
-tmp1->plot = 't
-tmp1->save = 't
+tmp1->plot = nil
+tmp1->save = nil
 tmp1->march = nil
 tmp1->index = 22
 tmp1->timeStamp = nil
@@ -1196,8 +1196,8 @@ tmp1->type = nil
 tmp1->areaTable = nil
 tmp1->selectionDetail = nil
 tmp1->value = nil
-tmp1->plot = 't
-tmp1->save = 't
+tmp1->plot = nil
+tmp1->save = nil
 tmp1->march = nil
 tmp1->index = 23
 tmp1->timeStamp = nil
@@ -1263,13 +1263,14 @@ tmp1 = make_sevOutputStruct()
 tmp1 = (ncons nil)
 )
 tmp1->inLastSet = nil
+tmp1->definedIn = "XYZ"
 tmp1->name = nil
 tmp1->expression = nil
 tmp1->signal = "/I0/I1/MP4/d"
-tmp1->scriptFile = nil
+tmp1->scriptFile = ""
 tmp1->type2 = nil
 tmp1->evalType = nil
-tmp1->displayIt = nil
+tmp1->displayIt = 't
 tmp1->internalName = nil
 tmp1->masterName = nil
 tmp1->masterScriptFile = nil
@@ -1414,8 +1415,8 @@ list(tmp1 tmp2)
 list(tmp1)
 )
 tmp1->value = nil
-tmp1->plot = 't
-tmp1->save = 't
+tmp1->plot = nil
+tmp1->save = nil
 tmp1->march = nil
 tmp1->index = 27
 tmp1->timeStamp = nil
@@ -1472,8 +1473,8 @@ list(tmp1 tmp2)
 list(tmp1)
 )
 tmp1->value = nil
-tmp1->plot = 't
-tmp1->save = 't
+tmp1->plot = nil
+tmp1->save = nil
 tmp1->march = nil
 tmp1->index = 28
 tmp1->timeStamp = nil
@@ -1708,6 +1709,180 @@ tmp1->plot = nil
 tmp1->save = nil
 tmp1->march = nil
 tmp1->index = 32
+tmp1->timeStamp = nil
+tmp1->graphType = nil
+tmp1->yaxisLabel = nil
+tmp1->label = nil
+tmp1->yaxisUnit = nil
+tmp1->waveSpec = nil
+list(tmp1)
+)
+_outputList = nconc( _outputList savedComponent) 
+savedComponent = nil 
+savedComponent = (let
+(tmp1)
+(unless tmp1
+tmp1 = make_sevOutputStruct()
+)
+(unless tmp1
+tmp1 = (ncons nil)
+)
+tmp1->inLastSet = nil
+tmp1->name = nil
+tmp1->expression = nil
+tmp1->signal = "/OUT0'"
+tmp1->scriptFile = nil
+tmp1->type2 = nil
+tmp1->evalType = nil
+tmp1->displayIt = nil
+tmp1->internalName = nil
+tmp1->masterName = nil
+tmp1->masterScriptFile = nil
+tmp1->saveScriptFile = nil
+tmp1->saveMasterScriptFile = nil
+tmp1->isReferenced = nil
+tmp1->lastEvalTime = nil
+tmp1->origin = nil
+tmp1->sweepSet = nil
+tmp1->depList = nil
+tmp1->type = 'net
+tmp1->areaTable = nil
+tmp1->selectionDetail = (let
+(tmp1)
+tmp1 = (let
+(tmp1 tmp2)
+tmp1 = 'color
+tmp2 = (let
+(tmp1 tmp2)
+tmp1 = "y7"
+tmp2 = "drawing"
+list(tmp1 tmp2)
+)
+list(tmp1 tmp2)
+)
+list(tmp1)
+)
+tmp1->value = nil
+tmp1->plot = 't
+tmp1->save = 't
+tmp1->march = nil
+tmp1->index = 33
+tmp1->timeStamp = nil
+tmp1->graphType = nil
+tmp1->yaxisLabel = nil
+tmp1->label = nil
+tmp1->yaxisUnit = nil
+tmp1->waveSpec = nil
+list(tmp1)
+)
+_outputList = nconc( _outputList savedComponent) 
+savedComponent = nil 
+savedComponent = (let
+(tmp1)
+(unless tmp1
+tmp1 = make_sevOutputStruct()
+)
+(unless tmp1
+tmp1 = (ncons nil)
+)
+tmp1->inLastSet = nil
+tmp1->name = nil
+tmp1->expression = nil
+tmp1->signal = "/OUT1'"
+tmp1->scriptFile = nil
+tmp1->type2 = nil
+tmp1->evalType = nil
+tmp1->displayIt = nil
+tmp1->internalName = nil
+tmp1->masterName = nil
+tmp1->masterScriptFile = nil
+tmp1->saveScriptFile = nil
+tmp1->saveMasterScriptFile = nil
+tmp1->isReferenced = nil
+tmp1->lastEvalTime = nil
+tmp1->origin = nil
+tmp1->sweepSet = nil
+tmp1->depList = nil
+tmp1->type = 'net
+tmp1->areaTable = nil
+tmp1->selectionDetail = (let
+(tmp1)
+tmp1 = (let
+(tmp1 tmp2)
+tmp1 = 'color
+tmp2 = (let
+(tmp1 tmp2)
+tmp1 = "y8"
+tmp2 = "drawing"
+list(tmp1 tmp2)
+)
+list(tmp1 tmp2)
+)
+list(tmp1)
+)
+tmp1->value = nil
+tmp1->plot = 't
+tmp1->save = 't
+tmp1->march = nil
+tmp1->index = 34
+tmp1->timeStamp = nil
+tmp1->graphType = nil
+tmp1->yaxisLabel = nil
+tmp1->label = nil
+tmp1->yaxisUnit = nil
+tmp1->waveSpec = nil
+list(tmp1)
+)
+_outputList = nconc( _outputList savedComponent) 
+savedComponent = nil 
+savedComponent = (let
+(tmp1)
+(unless tmp1
+tmp1 = make_sevOutputStruct()
+)
+(unless tmp1
+tmp1 = (ncons nil)
+)
+tmp1->inLastSet = nil
+tmp1->name = nil
+tmp1->expression = nil
+tmp1->signal = "/OUT2'"
+tmp1->scriptFile = nil
+tmp1->type2 = nil
+tmp1->evalType = nil
+tmp1->displayIt = nil
+tmp1->internalName = nil
+tmp1->masterName = nil
+tmp1->masterScriptFile = nil
+tmp1->saveScriptFile = nil
+tmp1->saveMasterScriptFile = nil
+tmp1->isReferenced = nil
+tmp1->lastEvalTime = nil
+tmp1->origin = nil
+tmp1->sweepSet = nil
+tmp1->depList = nil
+tmp1->type = 'net
+tmp1->areaTable = nil
+tmp1->selectionDetail = (let
+(tmp1)
+tmp1 = (let
+(tmp1 tmp2)
+tmp1 = 'color
+tmp2 = (let
+(tmp1 tmp2)
+tmp1 = "y9"
+tmp2 = "drawing"
+list(tmp1 tmp2)
+)
+list(tmp1 tmp2)
+)
+list(tmp1)
+)
+tmp1->value = nil
+tmp1->plot = 't
+tmp1->save = 't
+tmp1->march = nil
+tmp1->index = 35
 tmp1->timeStamp = nil
 tmp1->graphType = nil
 tmp1->yaxisLabel = nil

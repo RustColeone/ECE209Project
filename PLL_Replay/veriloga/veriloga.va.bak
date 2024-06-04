@@ -1,0 +1,44 @@
+`include "constants.vams"
+`include "disciplines.vams"
+
+module transient_data_replay (
+    OUT1, OUT1_bar, OUT2, OUT2_bar, OUT3, OUT3_bar
+);
+
+    electrical OUT1, OUT1_bar, OUT2, OUT2_bar, OUT3, OUT3_bar;
+    real t, v1, v1b, v2, v2b, v3, v3b;
+    integer file, c;
+    real current_time;
+
+    analog begin
+        @(initial_step) begin
+            file = $fopen("transient_data.txt", "r");
+            if (file == 0) begin
+                $display("Failed to open file");
+                $finish;
+            end
+            current_time = 0.0;
+        end
+
+        @(timer(0, 1n)) begin
+            while (!$feof(file)) begin
+                c = $fscanf(file, "%e %e %e %e %e %e %e\n", t, v1, v1b, v2, v2b, v3, v3b);
+                if (c == 7) begin
+                    @(timer(t - current_time, 1n)) begin
+                        V(OUT1) <+ v1;
+                        V(OUT1_bar) <+ v1b;
+                        V(OUT2) <+ v2;
+                        V(OUT2_bar) <+ v2b;
+                        V(OUT3) <+ v3;
+                        V(OUT3_bar) <+ v3b;
+                        current_time = t;
+                    end
+                end else begin
+                    $fclose(file);
+                    $finish;
+                end
+            end
+            $fclose(file);
+        end
+    end
+endmodule
