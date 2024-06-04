@@ -16,7 +16,7 @@ tmp2 = make_sevVariableStruct()
 tmp2 = (ncons nil)
 )
 tmp2->name = "VCONT"
-tmp2->expression = "0.9"
+tmp2->expression = "2"
 tmp2->index = 2
 (unless tmp3
 tmp3 = make_sevVariableStruct()
