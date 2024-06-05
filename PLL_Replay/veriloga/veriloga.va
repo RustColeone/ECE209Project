@@ -2,41 +2,38 @@
 `include "disciplines.vams"
 
 module transient_data_replay (
-    OUT1, OUT1_bar, OUT2, OUT2_bar, OUT3, OUT3_bar
+    OUT0, OUT0_bar, OUT1, OUT1_bar, OUT2, OUT2_bar
 );
 
-    electrical OUT1, OUT1_bar, OUT2, OUT2_bar, OUT3, OUT3_bar;
-    real t, v1, v1b, v2, v2b, v3, v3b;
+    electrical OUT0, OUT0_bar, OUT1, OUT1_bar, OUT2, OUT2_bar;
+	real t1, t2, t3, t4, t5;
+    real t, v0, v0b, v1, v1b, v2, v2b;
     integer file, c;
-    real current_time;
+	parameter real T_sample = 1p;
+    
 
     analog begin
         @(initial_step) begin
-            file = $fopen("transient_data.txt", "r");
-            if (file == 0) begin
-                $display("Failed to open file");
-            end
-            current_time = 0.0;
-        end
-
-        @(timer(0, 1n)) begin
-            while (!$feof(file)) begin
-                c = $fscanf(file, "%e %e %e %e %e %e %e\n", t, v1, v1b, v2, v2b, v3, v3b);
-                if (c == 7) begin
-                    @(timer(t - current_time, 1n)) begin
-                        V(OUT1) <+ v1;
-                        V(OUT1_bar) <+ v1b;
-                        V(OUT2) <+ v2;
-                        V(OUT2_bar) <+ v2b;
-                        V(OUT3) <+ v3;
-                        V(OUT3_bar) <+ v3b;
-                        current_time = t;
-                    end
-                end else begin
-                    $fclose(file);
-                end
-            end
-            $fclose(file);
-        end
+			file = $fopen("../PLL_Sim_full.csv", "r");
+    			if (file == 0) begin
+        			$display("Failed to open file");
+    			end
+			c = $fscanf(file, "%*[^\n]\n");
+        	end
+		@ (final_step)
+			$fclose(file);
+		@(timer(0, T_sample)) begin
+            if (!$feof(file)) begin
+                c = $fscanf(file, "%g,%g,%g,%g,%g,%g,%g,%g,%g,%g,%g,%g\n", 
+				t, v0, t1, v0b, t2, v1, t3, v1b, t4, v2, t5, v2b);
+			end
+			@(timer(t, T_sample));
+		end
+        V(OUT0) <+ transition(v0, 0, T_sample);
+        V(OUT0_bar) <+ transition(v0b, 0, T_sample);
+        V(OUT1) <+ transition(v1, 0, T_sample);
+        V(OUT1_bar) <+ transition(v1b, 0, T_sample);
+        V(OUT2) <+ transition(v2, 0, T_sample);
+        V(OUT2_bar) <+ transition(v2b, 0, T_sample);
     end
 endmodule
