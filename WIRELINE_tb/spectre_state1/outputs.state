@@ -608,8 +608,8 @@ tmp1->depList = nil
 tmp1->type = nil
 tmp1->areaTable = nil
 tmp1->selectionDetail = nil
-tmp1->value = 1.7848754011508378e+08
-tmp1->plot = 't
+tmp1->value = nil
+tmp1->plot = nil
 tmp1->save = nil
 tmp1->march = nil
 tmp1->index = 11
@@ -732,9 +732,31 @@ tmp1 = 'VAR
 tmp2 = "tsim"
 list(tmp1 tmp2)
 )
-tmp5 = 4.0000000000000001e-10
+tmp5 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = 'quotient
+tmp2 = 1
+tmp3 = (let
+(tmp1 tmp2)
+tmp1 = 'VAR
+tmp2 = "F0"
+list(tmp1 tmp2)
+)
+list(tmp1 tmp2 tmp3)
+)
 tmp6 = '?triggerPeriod
-tmp7 = 2.0000000000000001e-10
+tmp7 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = 'quotient
+tmp2 = 5.0000000000000000e-01
+tmp3 = (let
+(tmp1 tmp2)
+tmp1 = 'VAR
+tmp2 = "F0"
+list(tmp1 tmp2)
+)
+list(tmp1 tmp2 tmp3)
+)
 tmp8 = '?autoCenter
 tmp9 = 't
 list(tmp1 tmp2 tmp3 tmp4 tmp5 tmp6 tmp7 tmp8 tmp9)
@@ -793,9 +815,31 @@ tmp1 = 'VAR
 tmp2 = "tsim"
 list(tmp1 tmp2)
 )
-tmp5 = 4.0000000000000001e-10
+tmp5 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = 'quotient
+tmp2 = 1
+tmp3 = (let
+(tmp1 tmp2)
+tmp1 = 'VAR
+tmp2 = "F_2"
+list(tmp1 tmp2)
+)
+list(tmp1 tmp2 tmp3)
+)
 tmp6 = '?triggerPeriod
-tmp7 = 2.0000000000000001e-10
+tmp7 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = 'quotient
+tmp2 = 5.0000000000000000e-01
+tmp3 = (let
+(tmp1 tmp2)
+tmp1 = 'VAR
+tmp2 = "F_2"
+list(tmp1 tmp2)
+)
+list(tmp1 tmp2 tmp3)
+)
 tmp8 = '?autoCenter
 tmp9 = 't
 list(tmp1 tmp2 tmp3 tmp4 tmp5 tmp6 tmp7 tmp8 tmp9)
@@ -854,9 +898,31 @@ tmp1 = 'VAR
 tmp2 = "tsim"
 list(tmp1 tmp2)
 )
-tmp5 = 4.0000000000000001e-10
+tmp5 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = 'quotient
+tmp2 = 1
+tmp3 = (let
+(tmp1 tmp2)
+tmp1 = 'VAR
+tmp2 = "F_2"
+list(tmp1 tmp2)
+)
+list(tmp1 tmp2 tmp3)
+)
 tmp6 = '?triggerPeriod
-tmp7 = 2.0000000000000001e-10
+tmp7 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = 'quotient
+tmp2 = 5.0000000000000000e-01
+tmp3 = (let
+(tmp1 tmp2)
+tmp1 = 'VAR
+tmp2 = "F_2"
+list(tmp1 tmp2)
+)
+list(tmp1 tmp2 tmp3)
+)
 tmp8 = '?autoCenter
 tmp9 = 't
 list(tmp1 tmp2 tmp3 tmp4 tmp5 tmp6 tmp7 tmp8 tmp9)
