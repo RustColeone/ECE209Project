@@ -170,7 +170,7 @@ analysis(tran options infotimes) nil
 analysis(tran options linearic) ""
 analysis(tran options lteratio) ""
 analysis(tran options maxiters) "5"
-analysis(tran options maxstep) "1p"
+analysis(tran options maxstep) ""
 analysis(tran options method) ""
 analysis(tran options minstep) ""
 analysis(tran options nestlvl) ""

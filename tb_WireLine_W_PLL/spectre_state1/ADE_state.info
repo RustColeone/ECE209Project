@@ -1,0 +1,3 @@
+projectDir = '"~/simulation"
+designInfo = '("ReceiverPLL" "WIRELINE_tb" "schematic" "spectre")
+descriptionText = "None"
