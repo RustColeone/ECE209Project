@@ -3,7 +3,7 @@ analysis(dc fields dec) ""
 analysis(dc fields designVar) "Vnbias"
 analysis(dc fields dev) "/V1"
 analysis(dc fields deviceParam) "dc"
-analysis(dc fields enable) (t)
+analysis(dc fields enable) (nil)
 analysis(dc fields hysteresis) nil
 analysis(dc fields incrType) "Linear"
 analysis(dc fields lin) "10"
