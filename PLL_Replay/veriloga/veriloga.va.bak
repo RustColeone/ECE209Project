@@ -2,10 +2,10 @@
 `include "disciplines.vams"
 
 module transient_data_replay (
-    OUT0, OUT0_bar, OUT1, OUT1_bar, OUT2, OUT2_bar
+    OUT0, OUT0_bar, OUT1, OUT1_bar, OUT2, OUT2_bar, OUT53
 );
 
-    electrical OUT0, OUT0_bar, OUT1, OUT1_bar, OUT2, OUT2_bar;
+    electrical OUT0, OUT0_bar, OUT1, OUT1_bar, OUT2, OUT2_bar, OUT3;
 	real t1, t2, t3, t4, t5, t6;
     real t, v0, v0b, v1, v1b, v2, v2b, v3;
     integer file, c;
@@ -24,7 +24,7 @@ module transient_data_replay (
 			$fclose(file);
 		@(timer(0, T_sample)) begin
             if (!$feof(file)) begin
-                c = $fscanf(file, "%g,%g,%g,%g,%g,%g,%g,%g,%g,%g,%g,%g\n", 
+                c = $fscanf(file, "%g,%g,%g,%g,%g,%g,%g,%g,%g,%g,%g,%g,%g,%g\n", 
 				t, v0, t1, v0b, t2, v1, t3, v1b, t4, v2, t5, v2b, t6, v3);
 			end
 			@(timer(t, T_sample));
@@ -35,5 +35,6 @@ module transient_data_replay (
         V(OUT1_bar) <+ transition(v1b, 0, T_sample);
         V(OUT2) <+ transition(v2, 0, T_sample);
         V(OUT2_bar) <+ transition(v2b, 0, T_sample);
+        V(OUT3) <+ transition(v3, 0, T_sample);
     end
 endmodule
