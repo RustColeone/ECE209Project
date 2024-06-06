@@ -158,7 +158,7 @@ analysis(pnoise fields determsourcesfreqs3) nil
 analysis(pnoise fields determsourcesfreqs4) nil
 analysis(pnoise fields determsourcesfreqs5) nil
 analysis(pnoise fields determsourcesfreqs6) nil
-analysis(pnoise fields enable) (t)
+analysis(pnoise fields enable) (nil)
 analysis(pnoise fields enableEvent) t
 analysis(pnoise fields enableEvent2) t
 analysis(pnoise fields enableEvent3) t
@@ -560,7 +560,7 @@ analysis(pnoise fields stepTypeLog3) "Points Per Decade"
 analysis(pnoise fields stepTypeLog4) "Points Per Decade"
 analysis(pnoise fields stepTypeLog5) "Points Per Decade"
 analysis(pnoise fields stepTypeLog6) "Points Per Decade"
-analysis(pnoise fields stop) "50M"
+analysis(pnoise fields stop) "100M"
 analysis(pnoise fields stop2) ""
 analysis(pnoise fields stop3) ""
 analysis(pnoise fields stop4) ""
@@ -876,15 +876,15 @@ analysis(pss fields stop3) ""
 analysis(pss fields sweep) "Variable"
 analysis(pss fields sweep2) "Variable"
 analysis(pss fields sweep3) "Variable"
-analysis(pss fields sweepB) nil
+analysis(pss fields sweepB) t
 analysis(pss fields sweepB2) nil
 analysis(pss fields sweepB3) nil
 analysis(pss fields sweepChange) nil
 analysis(pss fields sweepChange2) nil
 analysis(pss fields sweepChange3) nil
 analysis(pss fields sweepLevel) "1"
-analysis(pss fields sweepOrderLabel) ""
-analysis(pss fields sweepStep) "0.1"
+analysis(pss fields sweepOrderLabel) "VCONT"
+analysis(pss fields sweepStep) "0.05"
 analysis(pss fields sweepvar_info) ""
 analysis(pss fields tstab) "10n"
 analysis(pss fields tstabHB) ""
