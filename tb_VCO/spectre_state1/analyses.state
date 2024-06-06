@@ -560,14 +560,14 @@ analysis(pnoise fields stepTypeLog3) "Points Per Decade"
 analysis(pnoise fields stepTypeLog4) "Points Per Decade"
 analysis(pnoise fields stepTypeLog5) "Points Per Decade"
 analysis(pnoise fields stepTypeLog6) "Points Per Decade"
-analysis(pnoise fields stop) "10M"
+analysis(pnoise fields stop) "50M"
 analysis(pnoise fields stop2) ""
 analysis(pnoise fields stop3) ""
 analysis(pnoise fields stop4) ""
 analysis(pnoise fields stop5) ""
 analysis(pnoise fields stop6) ""
 analysis(pnoise fields supportmultijitter) "yes"
-analysis(pnoise fields sweepChange) t
+analysis(pnoise fields sweepChange) nil
 analysis(pnoise fields sweepChange2) nil
 analysis(pnoise fields sweepChange3) nil
 analysis(pnoise fields sweepChange4) nil
@@ -876,14 +876,14 @@ analysis(pss fields stop3) ""
 analysis(pss fields sweep) "Variable"
 analysis(pss fields sweep2) "Variable"
 analysis(pss fields sweep3) "Variable"
-analysis(pss fields sweepB) t
+analysis(pss fields sweepB) nil
 analysis(pss fields sweepB2) nil
 analysis(pss fields sweepB3) nil
 analysis(pss fields sweepChange) nil
 analysis(pss fields sweepChange2) nil
 analysis(pss fields sweepChange3) nil
 analysis(pss fields sweepLevel) "1"
-analysis(pss fields sweepOrderLabel) "VCONT"
+analysis(pss fields sweepOrderLabel) ""
 analysis(pss fields sweepStep) "0.1"
 analysis(pss fields sweepvar_info) ""
 analysis(pss fields tstab) "10n"
