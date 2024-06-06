@@ -2,7 +2,7 @@
 `include "disciplines.vams"
 
 module transient_data_replay (
-    OUT0, OUT0_bar, OUT1, OUT1_bar, OUT2, OUT2_bar, OUT53
+    OUT0, OUT0_bar, OUT1, OUT1_bar, OUT2, OUT2_bar, OUT3
 );
 
     electrical OUT0, OUT0_bar, OUT1, OUT1_bar, OUT2, OUT2_bar, OUT3;
