@@ -6,10 +6,10 @@ module transient_data_replay (
 );
 
     electrical OUT0, OUT0_bar, OUT1, OUT1_bar, OUT2, OUT2_bar;
-	real t1, t2, t3, t4, t5;
-    real t, v0, v0b, v1, v1b, v2, v2b;
+	real t1, t2, t3, t4, t5, t6;
+    real t, v0, v0b, v1, v1b, v2, v2b, v3;
     integer file, c;
-	parameter real T_sample = 0.5p;
+	parameter real T_sample = 1p;
     
 
     analog begin
@@ -25,7 +25,7 @@ module transient_data_replay (
 		@(timer(0, T_sample)) begin
             if (!$feof(file)) begin
                 c = $fscanf(file, "%g,%g,%g,%g,%g,%g,%g,%g,%g,%g,%g,%g\n", 
-				t, v0, t1, v0b, t2, v1, t3, v1b, t4, v2, t5, v2b);
+				t, v0, t1, v0b, t2, v1, t3, v1b, t4, v2, t5, v2b, t6, v3);
 			end
 			@(timer(t, T_sample));
 		end
